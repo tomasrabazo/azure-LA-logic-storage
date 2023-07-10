@@ -1,6 +1,6 @@
 # azure-LA-logic-storage
 
-#Request create
+# Request create
 POST https://prod-18.uksouth.logic.azure.com:443/workflows/5e38cd7170f44e70aa8e86879ca55fa1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=sCrEgZI_q42qy7GKjjZk8scs1Ojq-uMQo98UqFmZbxg HTTP/1.1
 Accept-Encoding: gzip,deflate
 Content-Type: application/json
@@ -18,7 +18,7 @@ User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.1)
 	}"
 }
 
-#Response create
+# Response create
 HTTP/1.1 201 Created
 Cache-Control: no-cache
 Pragma: no-cache
@@ -45,7 +45,7 @@ Date: Mon, 10 Jul 2023 13:53:04 GMT
 
 Display Name: 202.json
 
-#Request read
+# Request read
 POST https://prod-18.uksouth.logic.azure.com:443/workflows/5e38cd7170f44e70aa8e86879ca55fa1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=sCrEgZI_q42qy7GKjjZk8scs1Ojq-uMQo98UqFmZbxg HTTP/1.1
 Accept-Encoding: gzip,deflate
 Content-Type: application/json
@@ -59,7 +59,7 @@ User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.1)
 	"userid":"202"
 }
 
-#Response read
+# Response read
 HTTP/1.1 200 OK
 Cache-Control: no-cache
 Pragma: no-cache
@@ -90,7 +90,7 @@ Body: ->{
 		"product1code":"203"
 	}<-
 
-#Request Unknown
+# Request Unknown
 POST https://prod-18.uksouth.logic.azure.com:443/workflows/5e38cd7170f44e70aa8e86879ca55fa1/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=sCrEgZI_q42qy7GKjjZk8scs1Ojq-uMQo98UqFmZbxg HTTP/1.1
 Accept-Encoding: gzip,deflate
 Content-Type: application/json
@@ -104,7 +104,7 @@ User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.1)
 	"userid":"202"
 }
 
-#Response Unknown
+# Response Unknown
 HTTP/1.1 404 Not Found
 Cache-Control: no-cache
 Pragma: no-cache
@@ -131,5 +131,5 @@ Date: Mon, 10 Jul 2023 13:55:22 GMT
 
 Action Unknown
 
-#Diagram
+# Diagram
 ![alt text](Screenshot2023-07-10at14.48.24.png)
